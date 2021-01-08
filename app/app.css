@@ -1,0 +1,65 @@
+/* app css stylesheet */
+
+body {
+  background-color: #141414;
+  color: whitesmoke;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover, .active {
+  color: lightblue
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid whitesmoke;
+  padding: 0 0 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  padding: 0px 12px;
+  list-style: none;
+}
+
+.container {
+  padding: 24px;
+}
+
+.sub-container{
+  width: 100%;
+}
+
+.sub-sub-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.language-options, .date-options {
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.entries {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

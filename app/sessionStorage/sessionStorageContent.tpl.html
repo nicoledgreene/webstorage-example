@@ -1,0 +1,10 @@
+<div ng-if="options" class="sub-sub-container">
+    <div ng-if="options.dateOptions" class="date-options">
+        <li ng-repeat="date in options.dateOptions" ng-click="options.updateDateRange(date)">
+            <a ng-class="{active: date===options.activeDateRange}">{{date}}</a>
+        </li>
+    </div>
+    <div class="entries">
+        <li ng-repeat="entry in options.entries">{{entry.date}}: {{entry.text}}</li>
+    </div>
+</div>

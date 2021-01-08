@@ -1,0 +1,8 @@
+<div ng-if="options" class="sub-sub-container">
+    <span class="heading">{{ options && options.welcomeMessage }}</span>
+    <div ng-if="options.languages" class="language-options">
+        <li ng-repeat="language in options.languages">
+            <a ng-class="{active: language===options.activeLanguage}" ng-click="options.updateLanguage(language)">{{ language }}</a>
+        </li>
+    </div>
+</div>
